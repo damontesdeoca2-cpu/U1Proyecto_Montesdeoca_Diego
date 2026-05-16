@@ -20,6 +20,10 @@
             <li><a href="contact.html">Contacto</a></li>
           </ul>
         </nav>
+        <div class="header-actions">
+          <input class="search" type="search" placeholder="Buscar películas..." aria-label="Buscar" />
+          <a class="button small" href="#">Iniciar sesión</a>
+        </div>
       </div>
     </header>
 
@@ -30,14 +34,18 @@
       </section>
 
       <section style="display:grid;grid-template-columns:260px 1fr;gap:20px">
-        <aside class="card">
-          <img src="images/hero.svg" alt="poster" style="border-radius:8px;margin-bottom:12px"/>
+        <aside class="card left-panel">
+          <div class="poster-wrap">
+            <img class="poster" src="images/hero.svg" alt="poster" />
+            <div class="rating-badge">9.8</div>
+          </div>
           <h3>Neon Genesis: Odyssey</h3>
-          <p style="color:#b6c1ca">Sci‑Fi • 2h45m</p>
-          <dl style="color:#9fb0c6;margin-top:12px">
-            <dt>Director</dt><dd>Elena Vance</dd>
-            <dt>Género</dt><dd>Sci‑Fi / Drama</dd>
-          </dl>
+          <p class="muted">Sci‑Fi • 2h45m • EN / SP</p>
+          <p class="muted small">En un futuro donde las estrellas son cosechadas por energía, un piloto renegado viaja por el cosmos.</p>
+          <div class="info-chips">
+            <div class="info-chip"><strong>Director</strong><span>Elena Vance</span></div>
+            <div class="info-chip"><strong>Género</strong><span>Sci‑Fi / Drama</span></div>
+          </div>
         </aside>
 
         <section class="card">
