@@ -1,68 +1,68 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cartelera | ChullaCine</title>
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html">ChullaCine</a>
-      <nav aria-label="Navegación principal">
-        <ul class="nav-list">
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="about.html">Acerca</a></li>
-          <li><a href="services.html" class="active">Cartelera</a></li>
-          <li><a href="contact.html">Contacto</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <main>
-    <section class="section hero plain-hero">
-      <div class="container">
-        <h1>Cartelera actual</h1>
-        <p>Encuentra las películas destacadas de ChullaCine con horarios, géneros y promociones en una sola página.</p>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>ChullaCine — Cartelera</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html">CHULLACINE</a>
+        <nav aria-label="main navigation">
+          <ul class="nav-list">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="about.html">Acerca</a></li>
+            <li><a href="services.html" class="active">Cartelera</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+          </ul>
+        </nav>
       </div>
-    </section>
-    <section class="section service-cards">
-      <div class="container cards-grid">
-        <article class="card">
-          <img src="images/services.svg" alt="Cartel de película de acción">
-          <h2>Acción explosiva</h2>
-          <p>Una aventura actual con efectos intensos y emoción en cada sala. Funciones: 16:00, 19:30, 22:00.</p>
+    </header>
+
+    <main class="container">
+      <section style="padding:28px 0">
+        <h1>Cartelera</h1>
+        <p style="color:#b5c3cf">Selecciona una película y una función. Los botones usan estilos :hover para animación.</p>
+      </section>
+
+      <section>
+        <article class="card" style="margin-bottom:18px">
+          <div style="display:flex;gap:16px;align-items:center">
+            <img src="images/services.svg" alt="poster" style="width:160px;border-radius:8px"/>
+            <div>
+              <h2>Neon Genesis: Odyssey <small style="color:#9fb0c6">9.8 • 2h45m</small></h2>
+              <p style="color:#b6c1ca">Viaja por fronteras de conciencia humana en esta épica de ciencia ficción.</p>
+              <div class="times" style="margin-top:12px">
+                <a class="time-btn" href="showtime.html">14:00</a>
+                <a class="time-btn" href="showtime.html">16:30</a>
+                <a class="time-btn" href="showtime.html">19:15</a>
+                <a class="time-btn" href="showtime.html">21:45</a>
+              </div>
+            </div>
+          </div>
         </article>
-        <article class="card">
-          <img src="images/about.svg" alt="Cartel de película de comedia romántica">
-          <h2>Comedia romántica</h2>
-          <p>La película ideal para compartir en pareja o en familia. Funciones: 14:45, 18:00, 20:30.</p>
-        </article>
-        <article class="card">
-          <img src="images/contact.svg" alt="Cartel de película infantil">
-          <h2>Cine infantil</h2>
-          <p>Hora de diversión para los más pequeños. Funciones familiares: 11:00, 13:30, 17:00.</p>
-        </article>
-      </div>
-    </section>
-    <section class="section info-section">
-      <div class="container">
-        <h2>Qué ofrece ChullaCine</h2>
-        <ul class="feature-list">
-          <li>Descripción clara de películas y horarios</li>
-          <li>Uso de tarjetas con imágenes y texto</li>
-          <li>Enlaces de navegación entre las páginas</li>
-          <li>Diseño con colores y tipografía propios de cine</li>
-        </ul>
-      </div>
-    </section>
-  </main>
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>Cartelera de cine creada con HTML semántico y CSS sencillo.</p>
-      <small>© 2026 ChullaCine.</small>
-    </div>
-  </footer>
-</body>
+
+        <div class="cards-grid">
+          <article class="card">
+            <img src="images/about.svg" alt="poster" />
+            <h3>Love & Lights</h3>
+            <p>Comedia romántica • 1h 50m</p>
+            <div class="times"><a class="time-btn" href="showtime.html">18:00</a></div>
+          </article>
+          <article class="card">
+            <img src="images/contact.svg" alt="poster" />
+            <h3>Family Tales</h3>
+            <p>Infantil • 1h 20m</p>
+            <div class="times"><a class="time-btn" href="showtime.html">11:00</a></div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">© 2026 ChullaCine</div>
+    </footer>
+  </body>
 </html>

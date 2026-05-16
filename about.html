@@ -1,69 +1,54 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Acerca | ChullaCine</title>
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html">ChullaCine</a>
-      <nav aria-label="Navegación principal">
-        <ul class="nav-list">
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="about.html" class="active">Acerca</a></li>
-          <li><a href="services.html">Cartelera</a></li>
-          <li><a href="contact.html">Contacto</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <main>
-    <section class="section hero plain-hero">
-      <div class="container">
-        <h1>Acerca de ChullaCine</h1>
-        <p>ChullaCine es un sitio web de ejemplo que simula la página de un cine local, con cartelera, promociones y contacto para consultas.</p>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>ChullaCine — Acerca</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html">CHULLACINE</a>
+        <nav aria-label="main navigation">
+          <ul class="nav-list">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="about.html" class="active">Acerca</a></li>
+            <li><a href="services.html">Cartelera</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+          </ul>
+        </nav>
       </div>
-    </section>
-    <section class="section content-grid">
-      <div class="container grid-two">
-        <article>
-          <h2>Objetivo del proyecto</h2>
-          <p>El objetivo es construir un sitio multipágina con una idea realista de cine, aplicando HTML semántico, rutas relativas, formularios y recursos de diseño.</p>
+    </header>
+
+    <main class="container">
+      <section style="padding:40px 0">
+        <h1>Acerca de ChullaCine</h1>
+        <p style="color:#b5c3cf;max-width:760px">
+          ChullaCine es un sitio de práctica que demuestra un diseño de cartelera
+          cinematográfica con navegación multipágina, formularios y estilo visual
+          inspirado en interfaces de cine moderno.
+        </p>
+      </section>
+
+      <section style="display:grid;grid-template-columns:1fr 320px;gap:20px">
+        <article class="card">
+          <h2>Objetivos</h2>
           <ul>
-            <li>Mostrar la propuesta de ChullaCine</li>
-            <li>Organizar contenido en páginas separadas</li>
-            <li>Usar un formulario GET para consultas</li>
+            <li>Presentar películas y horarios</li>
+            <li>Proporcionar formulario de contacto (GET)</li>
+            <li>Usar HTML semántico y rutas relativas</li>
           </ul>
         </article>
-        <aside>
-          <h2>Elementos técnicos</h2>
-          <p>Este proyecto utiliza <code>header</code>, <code>nav</code>, <code>main</code>, <code>section</code>, <code>article</code> y <code>footer</code> correctamente.</p>
-          <p>Los enlaces entre páginas son relativos y el formulario funciona con método <strong>GET</strong> para cumplir la unidad actual sin backend.</p>
+        <aside class="card">
+          <h3>Detalle técnico</h3>
+          <p style="color:#b6c1ca">Etiquetas: header, nav, main, section, article, footer.</p>
         </aside>
-      </div>
-    </section>
-    <section class="section timeline">
-      <div class="container">
-        <h2>Estructura de carpetas</h2>
-        <ol>
-          <li><strong>index.html</strong> - Página de inicio con presentación y navegación.</li>
-          <li><strong>about.html</strong> - Explica el propósito del proyecto y la idea de cine.</li>
-          <li><strong>services.html</strong> - Presenta la cartelera y servicios relacionados.</li>
-          <li><strong>contact.html</strong> - Formulario de contacto y horarios de funciones.</li>
-          <li><strong>css/styles.css</strong> - Estilos del sitio con colores y tipografía.</li>
-          <li><strong>images/</strong> - Ilustraciones SVG del cine y la cartelera.</li>
-        </ol>
-      </div>
-    </section>
-  </main>
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>Proyecto docente con estilo de cine y navegación clara.</p>
-      <small>© 2026 ChullaCine.</small>
-    </div>
-  </footer>
-</body>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">© 2026 ChullaCine — Proyecto de práctica</div>
+    </footer>
+  </body>
 </html>
