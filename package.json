@@ -1,0 +1,11 @@
+{
+  "name": "u1-proyecto-montesdeoca-diego",
+  "version": "1.0.0",
+  "description": "Proyecto web multipágina de Unidad 1 con HTML, CSS, navegación relativa y versiones en GitHub.",
+  "scripts": {
+    "build-report": "npx markdown-pdf report.md -o informe.pdf"
+  },
+  "devDependencies": {
+    "markdown-pdf": "^11.0.0"
+  }
+}

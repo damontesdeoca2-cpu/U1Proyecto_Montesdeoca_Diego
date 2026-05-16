@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | Mundo Verde Montesdeoca</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Mundo Verde</a>
+      <nav aria-label="Navegación principal">
+        <ul class="nav-list">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="about.html">Acerca</a></li>
+          <li><a href="services.html">Servicios</a></li>
+          <li><a href="contact.html" class="active">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="section hero plain-hero">
+      <div class="container">
+        <h1>Contacto</h1>
+        <p>Utiliza el formulario para hacer una consulta. El formulario usa método <strong>GET</strong> y aplica rutas relativas.</p>
+      </div>
+    </section>
+    <section class="section contact-section">
+      <div class="container contact-layout">
+        <form class="contact-form" method="get" action="contact.html">
+          <fieldset>
+            <legend>Envíanos tu consulta</legend>
+            <label for="nombre">Nombre completo</label>
+            <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" required>
+            <label for="email">Correo electrónico</label>
+            <input id="email" name="email" type="email" placeholder="correo@ejemplo.com" required>
+            <label for="asunto">Asunto</label>
+            <input id="asunto" name="asunto" type="text" placeholder="Sobre reservas, precios o servicios" required>
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu consulta aquí" required></textarea>
+            <button class="button" type="submit">Enviar consulta</button>
+          </fieldset>
+        </form>
+        <aside class="contact-info">
+          <h2>Horario y dirección</h2>
+          <table>
+            <thead>
+              <tr><th>Día</th><th>Horario</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Lunes - Viernes</td><td>09:00 - 18:00</td></tr>
+              <tr><td>Sábado</td><td>10:00 - 16:00</td></tr>
+              <tr><td>Domingo</td><td>Cerrado</td></tr>
+            </tbody>
+          </table>
+          <p>Teléfono: <a href="tel:+5491123456789">+54 9 11 2345 6789</a></p>
+          <p>Email: <a href="mailto:info@mundoverde.com">info@mundoverde.com</a></p>
+          <img src="images/contact.svg" alt="Ilustración del formulario de contacto">
+        </aside>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Página de contacto creada con HTML y CSS.</p>
+      <small>© 2026 Mundo Verde Montesdeoca.</small>
+    </div>
+  </footer>
+</body>
+</html>
