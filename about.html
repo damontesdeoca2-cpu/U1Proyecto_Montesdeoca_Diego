@@ -22,34 +22,84 @@
         </nav>
         <div class="header-actions">
           <input class="search" type="search" placeholder="Buscar películas..." aria-label="Buscar" />
-          <a class="button small" href="#">Iniciar sesión</a>
+          <a class="button small" href="sesion.html">Iniciar sesión</a>
         </div>
       </div>
     </header>
 
     <main class="container">
       <section style="padding:40px 0">
-        <h1>Acerca de ChullaCine</h1>
-        <p style="color:#b5c3cf;max-width:760px">
-          ChullaCine es un sitio de práctica que demuestra un diseño de cartelera
-          cinematográfica con navegación multipágina, formularios y estilo visual
-          inspirado en interfaces de cine moderno.
+        <h1>¿Qué es ChullaCine?</h1>
+        <p class="muted">
+          Bienvenidos a ChullaCine. Esta plataforma nació bajo una premisa simple pero ambiciosa: 
+          redefinir la forma en que compras tus entradas al cine. Sabemos lo frustrante que es lidiar con 
+          los portales convencionales llenos de pasos innecesarios. Por eso, diseñamos una herramienta rápida, inteligente 
+          y pensada exclusivamente para mejorar la experiencia de nuestros usuarios.
         </p>
       </section>
 
-      <section style="display:grid;grid-template-columns:1fr 320px;gap:20px">
+      <section class="cards-grid">
+        
         <article class="card">
-          <h2>Objetivos</h2>
-          <ul>
-            <li>Presentar películas y horarios</li>
-            <li>Proporcionar formulario de contacto (GET)</li>
-            <li>Usar HTML semántico y rutas relativas</li>
+          <h2>El cine convencional</h2>
+          <p class="muted">
+            En cualquier página tradicional, el proceso es un viaje largo y tedioso:
+          </p>
+          <ul style="margin-left: 40px;">
+            <li>Entrar a la cartelera principal.</li>
+            <li>Seleccionar la película en otra ventana.</li>
+            <li>Elegir la hora en una sección diferente.</li>
+            <li>Definir la cantidad de boletos.</li>
+            <li>Avanzar a ciegas sin saber realmente qué asientos están libres.</li>
+            <li>Recién ahí, ver el mapa de la sala y proceder a pagar.</li>
           </ul>
         </article>
-        <aside class="card">
-          <h3>Detalle técnico</h3>
-          <p style="color:#b6c1ca">Etiquetas: header, nav, main, section, article, footer.</p>
-        </aside>
+
+        <article class="card">
+          <h2>La Revolución ChullaCine</h2>
+          <p class="muted">
+            Eliminamos las barreras. Concentramos toda la experiencia clave en una sola pantalla unificada:
+          </p>
+          <ul style="margin-left: 40px;">
+            <li><strong>Optimización en un clic:</strong> Cambia de película directamente en el panel lateral; la información, salas y horarios se actualizan al instante sin cambiar de página.</li>
+            <li><strong>Transparencia visual absoluta:</strong> El mapa de butacas está visible desde el primer momento para que sepas qué disponibilidad real existe antes de tomar decisiones.</li>
+            <li><strong>Máxima eficiencia estructural:</strong> Menos clics, menos recargas de página y un control total de tu orden.</li>
+          </ul>
+        </article>
+
+      </section>
+
+      <section style="margin-bottom: 40px;">
+        <div class="card">
+          <h2 style="text-align: center; margin-bottom: 24px;">Beneficios exclusivos de nuestra App</h2>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+            
+            <div style="text-align: center;">
+              <h3>⏱️ Ahorro de Tiempo</h3>
+              <p class="muted">Olvídate de pasar por 5 pantallas diferentes para reservar. Todo lo que necesitas se procesa de forma directa e inmediata.</p>
+            </div>
+
+            <div style="text-align: center;">
+              <h3>📊 Información en Vivo</h3>
+              <p class="muted">Basta de números abstractos. Mira gráficamente la distribución de la sala y escoge tus asientos favoritos de forma interactiva.</p>
+            </div>
+
+            <div style="text-align: center;">
+              <h3>⚡ Dinamismo Total</h3>
+              <p class="muted">¿Cambiaste de opinión? El selector dinámico adapta la interfaz a la nueva película elegida sin interrumpir tu flujo de compra.</p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section style="margin-bottom: 40px;">
+        <article class="card" style="text-align: center;">
+          <h3>Nota de desarrollo</h3>
+          <p class="muted">
+            Actualmente, ChullaCine implementa una arquitectura basada en HTML y CSS. Este diseño interactivo proyecta fielmente la interfaz de alto rendimiento que planeamos entregar a los amantes del séptimo arte.
+          </p>
+        </article>
       </section>
     </main>
 

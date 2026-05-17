@@ -1,59 +1,68 @@
-<!doctype html>
+<!-- offers.html -->
+<!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Ofertas — ChullaCine</title>
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="container header-inner">
-        <a class="brand" href="index.html">CHULLACINE</a>
-        <nav aria-label="main navigation">
-          <ul class="nav-list">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="services.html">Cartelera</a></li>
-            <li><a href="showtime.html">Funciones</a></li>
-            <li><a href="offers.html" class="active">Ofertas</a></li>
-            <li><a href="about.html">Acerca</a></li>
-            <li><a href="contact.html">Contacto</a></li>
-          </ul>
-        </nav>
-        <div class="header-actions">
-          <input class="search" type="search" placeholder="Buscar películas..." aria-label="Buscar" />
-          <a class="button small" href="#">Iniciar sesión</a>
-        </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ofertas — ChullaCine</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">ChullaCine</a>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="services.html">Cartelera</a></li>
+          <li><a href="showtime.html">Funciones</a></li>
+          <li><a href="offers.html" class="active">Ofertas</a></li>
+          <li><a href="about.html">Acerca</a></li>
+          <li><a href="contact.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <input class="search" type="search" placeholder="Buscar...">
+         <a class="button small" href="sesion.html">Iniciar sesión</a>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <main class="container">
-      <section style="padding:28px 0">
-        <h1>Ofertas</h1>
-        <p style="color:#b6c1ca">Promociones vigentes en ChullaCine. Usa los botones para simular ver más (sin programación).</p>
-      </section>
+  <main class="container">
+    <h1>Ofertas especiales</h1>
+    <div class="cards-grid">
+      <div class="card">
+        <h3>2x1 los martes</h3>
+        <p class="muted">Segunda entrada 50% off todos los martes</p>
+        <br>
+        <img src="https://pbs.twimg.com/tweet_video_thumb/EC_5q1NU4AIFPJb.jpg" alt="" width="300px">
+        <br>
+        <br>
+        <center><a class="button small" href="#">Ver más</a></center>
+      </div>
+      <div class="card">
+        <h3>Combo familiar</h3>
+        <p class="muted">Palomitas + 4 bebidas con descuento</p>
+        <br>
+         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_Dy5kIAD5BCuOlvBwX4I44iddCAKqLXkmXQ&s" alt="" width="300px" height="300px;">
+        <br>
+        <br>
+         <center><a class="button small" href="#">Ver más</a></center>
+      </div>
+      <div class="card">
+        <h3>Noche de estudiantes</h3>
+        <p class="muted">40% off con credencial, miércoles</p>
+        <br>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRyAGVW9dkovUTQNa9eoVnRZDnbwnUMN5gkQ&s" alt="" width="300px" height="300px;">
+        <br>
+        <br>
+        <center><a class="button small" href="#">Ver más</a></center>
+      </div>
+    </div>
+  </main>
 
-      <section class="cards-grid">
-        <article class="card">
-          <h3>2-for-1 Tuesdays</h3>
-          <p style="color:#b6c1ca">Compra una entrada y la segunda al 50% todos los martes.</p>
-          <a class="button" href="#">Ver oferta</a>
-        </article>
-        <article class="card">
-          <h3>Family Combo</h3>
-          <p style="color:#b6c1ca">Combo familiar: palomitas grandes + 4 bebidas con descuento.</p>
-          <a class="button" href="#">Ver oferta</a>
-        </article>
-        <article class="card">
-          <h3>Student Night</h3>
-          <p style="color:#b6c1ca">Miércoles universitarios: 40% en entradas presentando ID.</p>
-          <a class="button" href="#">Ver oferta</a>
-        </article>
-      </section>
-    </main>
-
-    <footer>
-      <div class="container">© 2026 ChullaCine</div>
-    </footer>
-  </body>
+  <footer>
+    <div class="container">© 2026 ChullaCine</div>
+  </footer>
+</body>
 </html>

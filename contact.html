@@ -1,72 +1,67 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>ChullaCine — Contacto</title>
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="container header-inner">
-        <a class="brand" href="index.html">CHULLACINE</a>
-        <nav aria-label="main navigation">
-          <ul class="nav-list">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="services.html">Cartelera</a></li>
-            <li><a href="showtime.html">Funciones</a></li>
-            <li><a href="offers.html">Ofertas</a></li>
-            <li><a href="about.html">Acerca</a></li>
-            <li><a href="contact.html" class="active">Contacto</a></li>
-          </ul>
-        </nav>
-        <div class="header-actions">
-          <input class="search" type="search" placeholder="Buscar películas..." aria-label="Buscar" />
-          <a class="button small" href="#">Iniciar sesión</a>
-        </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto — ChullaCine</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">ChullaCine</a>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="services.html">Cartelera</a></li>
+          <li><a href="showtime.html">Funciones</a></li>
+          <li><a href="offers.html">Ofertas</a></li>
+          <li><a href="about.html">Acerca</a></li>
+          <li><a href="contact.html" class="active">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <input class="search" type="search" placeholder="Buscar...">
+        <a class="button small" href="sesion.html">Iniciar sesión</a>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <main class="container">
-      <section style="padding:32px 0">
-        <h1>Contacto</h1>
-        <p style="color:#b6c1ca">Envíanos una consulta. El formulario usa método <strong>GET</strong> (no requiere backend).</p>
-      </section>
+  <main class="container">
+    <h1>Contacto</h1>
+    <p class="muted">Escríbenos, te responderemos pronto.</p>
 
-      <section style="display:grid;grid-template-columns:1fr 320px;gap:20px">
-        <form method="get" action="contact.html" class="card">
-          <label for="nombre">Nombre</label>
-          <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" />
-          <label for="email">Correo</label>
-          <input id="email" name="email" type="email" placeholder="correo@ejemplo.com" />
-          <label for="pelicula">Película</label>
-          <input id="pelicula" name="pelicula" type="text" placeholder="Película de interés" />
-          <label for="mensaje">Mensaje</label>
-          <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje"></textarea>
-          <div style="margin-top:12px">
-            <button class="button" type="submit">Enviar consulta</button>
-          </div>
-        </form>
+    <div style="display: grid; grid-template-columns: 1fr 300px; gap: 30px; margin: 30px 0;">
+      <form method="get" action="contact.html" class="card">
+        <label>Nombre</label>
+        <input type="text" name="nombre" placeholder="Tu nombre" required>
+        
+        <label>Correo</label>
+        <input type="email" name="email" placeholder="correo@ejemplo.com" required>
+        
+        <label>Película de interés</label>
+        <input type="text" name="pelicula" placeholder="¿Qué quieres ver?">
+        
+        <label>Mensaje</label>
+        <textarea rows="4" name="mensaje" placeholder="Déjanos tu mensaje" required></textarea>
+        
+        <button class="button" type="submit" style="margin-top: 16px;">Enviar consulta</button>
+      </form>
 
-        <aside class="card">
-          <h3>Horario</h3>
-          <table style="width:100%;border-collapse:collapse;color:#b6c1ca">
-            <thead>
-              <tr><th style="text-align:left">Función</th><th style="text-align:left">Horario</th></tr>
-            </thead>
-            <tbody>
-              <tr><td>Neon Genesis</td><td>16:00 • 19:30 • 22:00</td></tr>
-              <tr><td>Love & Lights</td><td>14:45 • 18:00 • 20:30</td></tr>
-              <tr><td>Family Tales</td><td>11:00 • 13:30 • 17:00</td></tr>
-            </tbody>
-          </table>
-          <p style="margin-top:12px;color:#b6c1ca">Av. Cinematográfica 123 — Barrio Chulla</p>
-        </aside>
-      </section>
-    </main>
+      <div class="card">
+        <h3>Horarios</h3>
+        <table style="width:100%; border-collapse: collapse;">
+          <tr><td style="padding: 6px 0;">Neon Genesis</td><td class="muted">16:00 • 19:30 • 22:00</td></tr>
+          <tr><td style="padding: 6px 0;">Love & Lights</td><td class="muted">14:45 • 18:00</td></tr>
+          <tr><td style="padding: 6px 0;">Family Tales</td><td class="muted">11:00 • 13:30</td></tr>
+        </table>
+        <p class="muted" style="margin-top: 16px;">📍 Av. Cinematográfica 123</p>
+      </div>
+    </div>
+  </main>
 
-    <footer>
-      <div class="container">© 2026 ChullaCine</div>
-    </footer>
-  </body>
+  <footer>
+    <div class="container">© 2026 ChullaCine</div>
+  </footer>
+</body>
 </html>

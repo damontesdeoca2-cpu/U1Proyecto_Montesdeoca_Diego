@@ -1,74 +1,74 @@
+<!-- services.html - Cartelera simplificada -->
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>ChullaCine — Cartelera</title>
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="container header-inner">
-        <a class="brand" href="index.html">CHULLACINE</a>
-        <nav aria-label="main navigation">
-          <ul class="nav-list">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="services.html" class="active">Cartelera</a></li>
-            <li><a href="showtime.html">Funciones</a></li>
-            <li><a href="offers.html">Ofertas</a></li>
-            <li><a href="about.html">Acerca</a></li>
-            <li><a href="contact.html">Contacto</a></li>
-          </ul>
-        </nav>
-        <div class="header-actions">
-          <input class="search" type="search" placeholder="Buscar películas..." aria-label="Buscar" />
-          <a class="button small" href="#">Iniciar sesión</a>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cartelera — ChullaCine</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">ChullaCine</a>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="services.html" class="active">Cartelera</a></li>
+          <li><a href="showtime.html">Funciones</a></li>
+          <li><a href="offers.html">Ofertas</a></li>
+          <li><a href="about.html">Acerca</a></li>
+          <li><a href="contact.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <input class="search" type="search" placeholder="Buscar...">
+        <a class="button small" href="sesion.html">Iniciar sesión</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Cartelera</h1>
+    <p class="muted">Selecciona tu película y horario</p>
+
+    <!-- Película destacada -->
+    <div class="card" style="margin: 30px 0;">
+      <div style="display: flex; gap: 24px; flex-wrap: wrap;">
+        <img src="https://i.ytimg.com/vi/fzW5YvU_fKU/hqdefault.jpg" alt="Neon Genesis" style="width: 350px; border-radius: 16px;">
+        <div>
+          <h2>Neon Genesis: Odyssey <small class="muted">⭐ 9.8</small></h2>
+          <p class="muted">Ciencia ficción • 2h 45min</p>
+          <p>Viaja por las fronteras de la conciencia humana en esta épica cinematográfica.</p>
+          <div class="times">
+            <a class="time-btn" href="showtime.html">14:00</a>
+            <a class="time-btn" href="showtime.html">16:30</a>
+            <a class="time-btn sold" href="#">19:15 (Agotado)</a>
+            <a class="time-btn" href="showtime.html">21:45</a>
+          </div>
         </div>
       </div>
-    </header>
+    </div>
 
-    <main class="container">
-      <section style="padding:28px 0">
-        <h1>Cartelera</h1>
-        <p style="color:#b5c3cf">Selecciona una película y una función. Los botones usan estilos :hover para animación.</p>
-      </section>
+    <!-- Otras películas -->
+    <div class="cards-grid">
+      <div class="card">
+        <img class="poster-thumb" src="https://m.media-amazon.com/images/S/pv-target-images/1f6563242ffda87dc955a84ef9613e65a367af077158b23fdb2931e4fe49e658.jpg" alt="Love & Lights">
+        <h3>Love & Lights</h3>
+        <p class="muted">Comedia romántica • 1h 50m</p>
+        <div class="times"><a class="time-btn" href="showtime.html">18:00</a></div>
+      </div>
+      <div class="card">
+        <img class="poster-thumb" src="https://cf.geekdo-images.com/Rr2tK2caPxzFLRvMbrf4sQ__itemrep/img/PFg-n1183MhxrANflksDR_vrobg=/fit-in/246x300/filters:strip_icc()/pic6499900.jpg" alt="Family Tales">
+        <h3>Family Tales</h3>
+        <p class="muted">Infantil • 1h 20m</p>
+        <div class="times"><a class="time-btn" href="showtime.html">11:00</a></div>
+      </div>
+    </div>
+  </main>
 
-      <section>
-        <article class="card" style="margin-bottom:18px">
-          <div style="display:flex;gap:16px;align-items:center">
-            <img src="images/services.svg" alt="poster" style="width:160px;border-radius:8px"/>
-            <div>
-              <h2>Neon Genesis: Odyssey <small style="color:#9fb0c6">9.8 • 2h45m</small></h2>
-              <p style="color:#b6c1ca">Viaja por fronteras de conciencia humana en esta épica de ciencia ficción.</p>
-              <div class="times" style="margin-top:12px">
-                <a class="time-btn" href="showtime.html">14:00</a>
-                <a class="time-btn" href="showtime.html">16:30</a>
-                <a class="time-btn" href="showtime.html">19:15</a>
-                <a class="time-btn" href="showtime.html">21:45</a>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <div class="cards-grid">
-          <article class="card">
-            <img src="images/about.svg" alt="poster" />
-            <h3>Love & Lights</h3>
-            <p>Comedia romántica • 1h 50m</p>
-            <div class="times"><a class="time-btn" href="showtime.html">18:00</a></div>
-          </article>
-          <article class="card">
-            <img src="images/contact.svg" alt="poster" />
-            <h3>Family Tales</h3>
-            <p>Infantil • 1h 20m</p>
-            <div class="times"><a class="time-btn" href="showtime.html">11:00</a></div>
-          </article>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <div class="container">© 2026 ChullaCine</div>
-    </footer>
-  </body>
+  <footer>
+    <div class="container">© 2026 ChullaCine</div>
+  </footer>
+</body>
 </html>

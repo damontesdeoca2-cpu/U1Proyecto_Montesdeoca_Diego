@@ -1,3 +1,4 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -10,7 +11,7 @@
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="index.html">ChullaCine</a>
-      <nav aria-label="Navegación principal">
+      <nav>
         <ul class="nav-list">
           <li><a href="index.html" class="active">Inicio</a></li>
           <li><a href="services.html">Cartelera</a></li>
@@ -21,81 +22,55 @@
         </ul>
       </nav>
       <div class="header-actions">
-        <input class="search" type="search" placeholder="Buscar películas..." aria-label="Buscar" />
-        <a class="button small" href="#">Iniciar sesión</a>
+        <input class="search" type="search" placeholder="Buscar...">
+        <a class="button small" href="sesion.html">Iniciar sesión</a>
       </div>
     </div>
   </header>
+
   <main>
-    <img src="https://img.magnific.com/vector-gratis/fondo-tira-pelicula-retro-estilo-3d-espacio-texto_1017-52848.jpg?semt=ais_incoming&w=740&q=80" alt="" style="width: 100%; height: 800px;">
-    <section class="hero">
-      <div class="hero-copy">
-        <p class="eyebrow">ChullaCine</p>
-        <h1>Tu cine local en línea</h1>
-        <p>Descubre la cartelera de ChullaCine, solicita información y conoce las funciones disponibles en un sitio web creado para la Unidad 1.</p>
-        <div class="hero-actions">
-          <a class="button" href="services.html">Ver cartelera</a>
-          <a class="button secondary" href="contact.html">Contactar</a>
+    <div class="container">
+      <div class="hero">
+        <div>
+          <span class="muted">★ Recomendada</span>
+          <h1>Neon Reckoning</h1>
+          <p>En un mundo donde los recuerdos son moneda, un agente solitario debe filtrar datos que pueden desmantelar el sistema.</p>
+          <div style="display: flex; gap: 16px;">
+            <a class="button" href="services.html">Reservar</a>
+            <a class="button secondary" href="showtime.html">Ver trailer</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="https://cdn.pixabay.com/video/2022/12/25/144257-784302968_tiny.jpg" alt="Cine">
         </div>
       </div>
-      <div class="hero-image">
-        <img src="https://cdn.pixabay.com/video/2022/12/25/144257-784302968_tiny.jpg" alt="Ilustración de cine con pantalla y boletos">
+
+      <h2>Próximos estrenos</h2>
+      <div class="cards-grid">
+        <div class="card">
+          <img class="poster-thumb" src="https://www.hachettebookgroup.com/wp-content/uploads/2025/04/9781668649961_88e9fc.jpg" alt="The Void Walker">
+          <h3>The Void Walker</h3>
+          <p class="muted">Sci-Fi • Acción</p>
+          <span class="muted">⭐ 9.2</span>
+        </div>
+        <div class="card">
+          <img class="poster-thumb" src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1632960117i/59117390.jpg" alt="Echoes of Silence">
+          <h3>Echoes of Silence</h3>
+          <p class="muted">Drama • Misterio</p>
+          <span class="muted">⭐ 8.5</span>
+        </div>
+        <div class="card">
+          <img class="poster-thumb" src="https://emmamccormickart.wordpress.com/wp-content/uploads/2014/12/sugar-rush.jpg" alt="Sugar Rush World">
+          <h3>Sugar Rush World</h3>
+          <p class="muted">Animación</p>
+          <span class="muted">⭐ 9.0</span>
+        </div>
       </div>
-    </section>
-    <section class="section info-section">
-      <div class="container">
-        <h2>¿Para qué sirve ChullaCine?</h2>
-        <p>El sitio muestra películas, horarios de funciones y un formulario de contacto con método GET, cumpliendo con los requisitos de HTML, rutas relativas y diseño básico.</p>
-        <ul class="feature-list">
-          <li>Rutas relativas y navegación entre páginas</li>
-          <li>Etiquetas semánticas y estructura HTML completa</li>
-          <li>Tipografía, colores y fondos con estilo cinematográfico</li>
-          <li>Formulario GET, listas, tablas e imágenes</li>
-        </ul>
-      </div>
-    </section>
-    <section class="section table-section">
-      <div class="container">
-        <h2>Estructura del proyecto</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>Página</th>
-              <th>Función</th>
-              <th>Elementos</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Inicio</td>
-              <td>Presenta al cine y su propósito</td>
-              <td>Encabezados, botones, lista, imagen</td>
-            </tr>
-            <tr>
-              <td>Acerca</td>
-              <td>Explica el proyecto y su estructura</td>
-              <td>Secciones, listas, artículos, aside</td>
-            </tr>
-            <tr>
-              <td>Cartelera</td>
-              <td>Muestra películas, horarios y servicios</td>
-              <td>Tarjetas, imágenes, listas</td>
-            </tr>
-            <tr>
-              <td>Contacto</td>
-              <td>Formulario de consultas y horarios</td>
-              <td>Formulario GET, tabla, enlaces</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-  </main>
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>Sitio web ChullaCine con HTML, CSS y buena organización.</p>
-      <small>© 2026 ChullaCine. Todos los derechos reservados.</small>
     </div>
+  </main>
+
+  <footer>
+    <div class="container">© 2026 ChullaCine — Proyecto de práctica</div>
   </footer>
 </body>
 </html>

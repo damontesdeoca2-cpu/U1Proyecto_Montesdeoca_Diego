@@ -1,150 +1,147 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-    <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Funciones — ChullaCine</title>
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="container header-inner">
-        <a class="brand" href="index.html">CHULLACINE</a>
-        <nav aria-label="main navigation">
-          <ul class="nav-list">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="services.html">Cartelera</a></li>
-            <li><a href="showtime.html" class="active">Funciones</a></li>
-            <li><a href="offers.html">Ofertas</a></li>
-            <li><a href="about.html">Acerca</a></li>
-            <li><a href="contact.html">Contacto</a></li>
-          </ul>
-        </nav>
-        <div class="header-actions">
-          <input class="search" type="search" placeholder="Buscar películas..." aria-label="Buscar" />
-          <a class="button small" href="#">Iniciar sesión</a>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Funciones — ChullaCine</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">ChullaCine</a>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="services.html">Cartelera</a></li>
+          <li><a href="showtime.html" class="active">Funciones</a></li>
+          <li><a href="offers.html">Ofertas</a></li>
+          <li><a href="about.html">Acerca</a></li>
+          <li><a href="contact.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <input class="search" type="search" placeholder="Buscar...">
+        <a class="button small" href="sesion.html">Iniciar sesión</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Seleccionar función</h1>
+    <p class="muted">Elige horario, sala y butacas</p>
+
+    <div style="display: grid; grid-template-columns: 280px 1fr; gap: 30px; margin: 30px 0;">
+      <div class="card" style="display: flex; flex-direction: column; gap: 12px;">
+        <div>
+          <img class="poster-thumb" src="https://i.ytimg.com/vi/fzW5YvU_fKU/hqdefault.jpg" alt="Neon Genesis" style="height: auto; width: 100%;">
+          <h3 style="margin-top: 12px; margin-bottom: 4px;">Neon Genesis: Odyssey</h3>
+          <p class="muted">2h 45min • Sci-Fi</p>
+          <div class="muted" style="margin-top: 12px; margin-bottom: 16px;">
+            <div><strong>Director:</strong> Elena Vance</div>
+            <div><strong>Idioma:</strong> Español/Inglés</div>
+          </div>
+        </div>
+
+        <div style="border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 16px;">
+          <label for="cambiar-pelicula">Cambiar película</label>
+          <select id="cambiar-pelicula" name="pelicula_seleccionada">
+            <option value="showtime.html" selected>Neon Genesis: Odyssey</option>
+            <option value="showtime.html?movie=love-lights">Love & Lights</option>
+            <option value="showtime.html?movie=family-tales">Family Tales</option>
+          </select>
         </div>
       </div>
-    </header>
 
-    <main class="container">
-      <section style="padding:28px 0">
-        <h1>Seleccionar función</h1>
-        <p style="color:#b6c1ca">Elige butaca(s) y completa el formulario para simular la reserva. Método GET, sin programación.</p>
-      </section>
-
-      <section style="display:grid;grid-template-columns:260px 1fr;gap:20px">
-        <aside class="card left-panel">
-          <div class="poster-wrap">
-            <img class="poster" src="images/hero.svg" alt="poster" />
-            <div class="rating-badge">9.8</div>
-          </div>
-          <h3>Neon Genesis: Odyssey</h3>
-          <p class="muted">Sci‑Fi • 2h45m • EN / SP</p>
-          <p class="muted small">En un futuro donde las estrellas son cosechadas por energía, un piloto renegado viaja por el cosmos.</p>
-          <div class="info-chips">
-            <div class="info-chip"><strong>Director</strong><span>Elena Vance</span></div>
-            <div class="info-chip"><strong>Género</strong><span>Sci‑Fi / Drama</span></div>
-          </div>
-        </aside>
-
-        <section class="card">
-          <form method="get" action="showtime.html">
-            <div style="display:flex;gap:12px;align-items:center;margin-bottom:12px">
-              <div style="background:rgba(124,58,237,0.12);padding:8px 12px;border-radius:8px;color:var(--accent);font-weight:700">IMAX 4K</div>
-              <div style="color:#b6c1ca">21:45 — $24.00</div>
-            </div>
-
-            <div style="text-align:center;margin:18px 0;color:#9fb0c6">THE SCREEN</div>
-
-            <div class="seat-map" aria-label="Mapa de asientos">
-              <!-- 5 rows x 10 cols simplified -->
-              <!-- create checkboxes and labels for visual selection -->
-              <template id="seats"></template>
-              <!-- We'll output seats manually (no JS) -->
-              <input type="checkbox" id="s1" name="seat" value="A1"><label for="s1" class="seat"></label>
-              <input type="checkbox" id="s2" name="seat" value="A2"><label for="s2" class="seat"></label>
-              <input type="checkbox" id="s3" name="seat" value="A3"><label for="s3" class="seat"></label>
-              <input type="checkbox" id="s4" name="seat" value="A4"><label for="s4" class="seat"></label>
-              <input type="checkbox" id="s5" name="seat" value="A5"><label for="s5" class="seat"></label>
-              <input type="checkbox" id="s6" name="seat" value="A6"><label for="s6" class="seat"></label>
-              <input type="checkbox" id="s7" name="seat" value="A7"><label for="s7" class="seat"></label>
-              <input type="checkbox" id="s8" name="seat" value="A8"><label for="s8" class="seat"></label>
-              <input type="checkbox" id="s9" name="seat" value="A9"><label for="s9" class="seat"></label>
-              <input type="checkbox" id="s10" name="seat" value="A10"><label for="s10" class="seat"></label>
-
-              <input type="checkbox" id="s11" name="seat" value="B1"><label for="s11" class="seat"></label>
-              <input type="checkbox" id="s12" name="seat" value="B2"><label for="s12" class="seat"></label>
-              <input type="checkbox" id="s13" name="seat" value="B3"><label for="s13" class="seat"></label>
-              <input type="checkbox" id="s14" name="seat" value="B4"><label for="s14" class="seat"></label>
-              <input type="checkbox" id="s15" name="seat" value="B5"><label for="s15" class="seat"></label>
-              <input type="checkbox" id="s16" name="seat" value="B6"><label for="s16" class="seat"></label>
-              <input type="checkbox" id="s17" name="seat" value="B7"><label for="s17" class="seat"></label>
-              <input type="checkbox" id="s18" name="seat" value="B8"><label for="s18" class="seat"></label>
-              <input type="checkbox" id="s19" name="seat" value="B9"><label for="s19" class="seat"></label>
-              <input type="checkbox" id="s20" name="seat" value="B10"><label for="s20" class="seat"></label>
-
-              <input type="checkbox" id="s21" name="seat" value="C1"><label for="s21" class="seat"></label>
-              <input type="checkbox" id="s22" name="seat" value="C2"><label for="s22" class="seat"></label>
-              <input type="checkbox" id="s23" name="seat" value="C3"><label for="s23" class="seat"></label>
-              <input type="checkbox" id="s24" name="seat" value="C4"><label for="s24" class="seat"></label>
-              <input type="checkbox" id="s25" name="seat" value="C5"><label for="s25" class="seat"></label>
-              <input type="checkbox" id="s26" name="seat" value="C6"><label for="s26" class="seat"></label>
-              <input type="checkbox" id="s27" name="seat" value="C7"><label for="s27" class="seat"></label>
-              <input type="checkbox" id="s28" name="seat" value="C8"><label for="s28" class="seat"></label>
-              <input type="checkbox" id="s29" name="seat" value="C9"><label for="s29" class="seat"></label>
-              <input type="checkbox" id="s30" name="seat" value="C10"><label for="s30" class="seat"></label>
-
-              <input type="checkbox" id="s31" name="seat" value="D1"><label for="s31" class="seat"></label>
-              <input type="checkbox" id="s32" name="seat" value="D2"><label for="s32" class="seat"></label>
-              <input type="checkbox" id="s33" name="seat" value="D3"><label for="s33" class="seat"></label>
-              <input type="checkbox" id="s34" name="seat" value="D4"><label for="s34" class="seat"></label>
-              <input type="checkbox" id="s35" name="seat" value="D5"><label for="s35" class="seat"></label>
-              <input type="checkbox" id="s36" name="seat" value="D6"><label for="s36" class="seat"></label>
-              <input type="checkbox" id="s37" name="seat" value="D7"><label for="s37" class="seat"></label>
-              <input type="checkbox" id="s38" name="seat" value="D8"><label for="s38" class="seat"></label>
-              <input type="checkbox" id="s39" name="seat" value="D9"><label for="s39" class="seat"></label>
-              <input type="checkbox" id="s40" name="seat" value="D10"><label for="s40" class="seat"></label>
-
-              <input type="checkbox" id="s41" name="seat" value="E1"><label for="s41" class="seat"></label>
-              <input type="checkbox" id="s42" name="seat" value="E2"><label for="s42" class="seat"></label>
-              <input type="checkbox" id="s43" name="seat" value="E3"><label for="s43" class="seat"></label>
-              <input type="checkbox" id="s44" name="seat" value="E4"><label for="s44" class="seat"></label>
-              <input type="checkbox" id="s45" name="seat" value="E5"><label for="s45" class="seat"></label>
-              <input type="checkbox" id="s46" name="seat" value="E6"><label for="s46" class="seat"></label>
-              <input type="checkbox" id="s47" name="seat" value="E7"><label for="s47" class="seat"></label>
-              <input type="checkbox" id="s48" name="seat" value="E8"><label for="s48" class="seat"></label>
-              <input type="checkbox" id="s49" name="seat" value="E9"><label for="s49" class="seat"></label>
-              <input type="checkbox" id="s50" name="seat" value="E10"><label for="s50" class="seat"></label>
-            </div>
-
-            <div class="legend" style="justify-content:center">
-              <span><span class="box" style="background:#061024;border:2px solid rgba(255,255,255,0.03)"></span> Regular</span>
-              <span><span class="box" style="background:var(--accent2)"></span> Prime</span>
-              <span><span class="box" style="background:var(--accent)"></span> Selected</span>
-            </div>
-
-            <div style="display:flex;gap:12px;align-items:center;justify-content:flex-end;margin-top:18px">
-              <label style="color:#9fb0c6">Tipo</label>
-              <select name="type" style="padding:8px;border-radius:8px;background:transparent;color:var(--text);border:1px solid rgba(255,255,255,0.06)">
-                <option>Adulto</option>
-                <option>Niño</option>
+      <div class="card">
+        <form method="get" action="showtime.html">
+          <div style="display: flex; gap: 20px; margin-bottom: 24px; flex-wrap: wrap;">
+            <div style="flex: 1;">
+              <label>Horario</label>
+              <select name="horario" style="width: 100%;">
+                <option>14:00 - Sala IMAX</option>
+                <option>16:30 - Sala 2D</option>
+                <option selected>19:15 - Sala 4K</option>
+                <option>21:45 - Sala Premium</option>
               </select>
-              <label style="color:#9fb0c6">Cantidad</label>
-              <input type="number" name="qty" value="1" min="1" max="10" style="width:64px;padding:8px;border-radius:8px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:var(--text)" />
             </div>
-
-            <div style="display:flex;gap:10px;justify-content:flex-end;margin-top:18px">
-              <button class="button secondary" type="reset">Cancelar</button>
-              <button class="button" type="submit">Confirmar selección</button>
+            <div style="flex: 1;">
+              <label>Tipo de sala</label>
+              <select name="sala" style="width: 100%;">
+                <option>Estándar</option>
+                <option>IMAX</option>
+                <option>4K HDR</option>
+                <option>Premium + Sonido</option>
+              </select>
             </div>
-          </form>
-        </section>
-      </section>
-    </main>
+          </div>
 
-    <footer>
-      <div class="container">© 2026 ChullaCine</div>
-    </footer>
-  </body>
+          <div style="text-align: center; margin: 20px 0 10px; color: var(--muted);">── PANTALLA ──</div>
+
+          <div class="seat-map">
+            <input type="checkbox" id="a1" name="seat" value="A1"><label for="a1" class="seat"></label>
+            <input type="checkbox" id="a2" name="seat" value="A2"><label for="a2" class="seat"></label>
+            <input type="checkbox" id="a3" name="seat" value="A3"><label for="a3" class="seat"></label>
+            <input type="checkbox" id="a4" name="seat" value="A4"><label for="a4" class="seat"></label>
+            <input type="checkbox" id="a5" name="seat" value="A5"><label for="a5" class="seat"></label>
+            <input type="checkbox" id="a6" name="seat" value="A6"><label for="a6" class="seat"></label>
+            <input type="checkbox" id="a7" name="seat" value="A7"><label for="a7" class="seat"></label>
+            <input type="checkbox" id="a8" name="seat" value="A8"><label for="a8" class="seat"></label>
+            <input type="checkbox" id="a9" name="seat" value="A9"><label for="a9" class="seat"></label>
+            <input type="checkbox" id="a10" name="seat" value="A10"><label for="a10" class="seat"></label>
+            <input type="checkbox" id="b1" name="seat" value="B1"><label for="b1" class="seat"></label>
+            <input type="checkbox" id="b2" name="seat" value="B2"><label for="b2" class="seat"></label>
+            <input type="checkbox" id="b3" name="seat" value="B3"><label for="b3" class="seat"></label>
+            <input type="checkbox" id="b4" name="seat" value="B4"><label for="b4" class="seat"></label>
+            <input type="checkbox" id="b5" name="seat" value="B5"><label for="b5" class="seat"></label>
+            <input type="checkbox" id="b6" name="seat" value="B6"><label for="b6" class="seat"></label>
+            <input type="checkbox" id="b7" name="seat" value="B7"><label for="b7" class="seat"></label>
+            <input type="checkbox" id="b8" name="seat" value="B8"><label for="b8" class="seat"></label>
+            <input type="checkbox" id="b9" name="seat" value="B9"><label for="b9" class="seat"></label>
+            <input type="checkbox" id="b10" name="seat" value="B10"><label for="b10" class="seat"></label>
+            <input type="checkbox" id="c1" name="seat" value="C1"><label for="c1" class="seat"></label>
+            <input type="checkbox" id="c2" name="seat" value="C2"><label for="c2" class="seat"></label>
+            <input type="checkbox" id="c3" name="seat" value="C3"><label for="c3" class="seat"></label>
+            <input type="checkbox" id="c4" name="seat" value="C4"><label for="c4" class="seat"></label>
+            <input type="checkbox" id="c5" name="seat" value="C5"><label for="c5" class="seat"></label>
+            <input type="checkbox" id="c6" name="seat" value="C6"><label for="c6" class="seat"></label>
+            <input type="checkbox" id="c7" name="seat" value="C7"><label for="c7" class="seat"></label>
+            <input type="checkbox" id="c8" name="seat" value="C8"><label for="c8" class="seat"></label>
+            <input type="checkbox" id="c9" name="seat" value="C9"><label for="c9" class="seat"></label>
+            <input type="checkbox" id="c10" name="seat" value="C10"><label for="c10" class="seat"></label>
+          </div>
+
+          <div class="legend">
+            <span><span class="box" style="background:#1a1a24"></span> Libre</span>
+            <span><span class="box" style="background:var(--accent)"></span> Seleccionada</span>
+          </div>
+
+          <div style="display: flex; gap: 20px; margin: 20px 0; flex-wrap: wrap;">
+            <div style="flex:1">
+              <label>Cantidad</label>
+              <input type="number" name="qty" value="1" min="1" max="8">
+            </div>
+            <div style="flex:1">
+              <label>Tipo de entrada</label>
+              <select name="type">
+                <option>Adulto ($12)</option>
+                <option>Niño ($8)</option>
+                <option>Estudiante ($9)</option>
+              </select>
+            </div>
+          </div>
+
+          <div style="display: flex; justify-content: flex-end; gap: 16px; margin-top: 16px;">
+            <button class="button secondary" type="reset">Limpiar</button>
+            <button class="button" type="submit">Confirmar reserva</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">© 2026 ChullaCine</div>
+  </footer>
+</body>
 </html>
