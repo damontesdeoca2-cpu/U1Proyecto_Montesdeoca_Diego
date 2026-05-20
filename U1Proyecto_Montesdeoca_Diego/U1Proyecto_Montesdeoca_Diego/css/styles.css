@@ -1,0 +1,294 @@
+/* styles.css - Versión simplificada y minimalista */
+:root {
+  --bg: #07060b;
+  --card: #0f0f14;
+  --accent: #b13bff;
+  --accent2: #f0f000;
+  --muted: #9fb0c6;
+  --text: #e6eef8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+.site-header {
+  background: #05060a;
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.brand {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--accent);
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.nav-list {
+  display: flex;
+  gap: 8px;
+  list-style: none;
+}
+
+.nav-list a {
+  color: var(--muted);
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.nav-list a:hover,
+.nav-list a.active {
+  background: rgba(177, 59, 255, 0.1);
+  color: var(--text);
+}
+
+.header-actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.search {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 8px 16px;
+  border-radius: 40px;
+  color: var(--text);
+}
+
+.search::placeholder {
+  color: var(--muted);
+}
+
+.button {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--accent), #8a39ff);
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 40px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.button.small {
+  padding: 6px 14px;
+  font-size: 0.8rem;
+}
+
+.button.secondary {
+  background: transparent;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+}
+
+/* Cards y grids */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 20px;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.poster-thumb {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin-bottom: 12px;
+}
+
+/* Hero */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  padding: 60px 0;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin: 16px 0;
+}
+
+.hero p {
+  color: var(--muted);
+  margin-bottom: 24px;
+}
+
+.hero-image img {
+  width: 100%;
+  border-radius: 24px;
+}
+
+/* Buttons de tiempo */
+.times {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+.time-btn {
+  background: rgba(200, 21, 21, 0.05);
+  padding: 8px 16px;
+  border-radius: 40px;
+  color: var(--text);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+}
+
+.time-btn:hover {
+  background: var(--accent);
+  transform: translateY(-2px);
+}
+
+.time-btn.sold {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+/* Seat map */
+.seat-map {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 8px;
+  margin: 20px 0;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+label.seat {
+  background: #1a1a24;
+  border-radius: 8px;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+input[type="checkbox"]:checked + label.seat {
+  background: var(--accent);
+}
+
+.legend {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin: 16px 0;
+  font-size: 0.8rem;
+}
+
+.legend .box {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  border-radius: 4px;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+/* Forms */
+input, select, textarea {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 12px;
+  color: var(--text);
+  width: 100%;
+}
+
+/* CAMBIO AQUÍ: Estilos para que las letras dentro del menú desplegable se vean claras y en negro */
+select option {
+  background-color: #ffffff; /* Fondo blanco para las opciones de la lista */
+  color: #000000;            /* Letras totalmente negras para máxima legibilidad */
+  padding: 10px;
+}
+
+/* Opcional: Esto ayuda en algunos navegadores a que el texto seleccionado mantenga el contraste */
+select option:checked {
+  box-shadow: 0 0 10px 100px var(--accent) inset;
+  color: #ffffff !important; /* Si se selecciona, la letra se vuelve blanca sobre el fondo morado */
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 30px 0;
+  color: var(--muted);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  margin-top: 40px;
+}
+
+/* Utilidades */
+h1 { font-size: 2.2rem; margin-bottom: 16px; }
+h2 { font-size: 1.6rem; margin: 20px 0 12px; }
+h3 { font-size: 1.2rem; margin-bottom: 8px; }
+.muted { color: var(--muted); }
+small { color: var(--muted); }
+
+/* Layout responsive */
+@media (max-width: 768px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+  .header-inner {
+    flex-direction: column;
+  }
+  .seat-map {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}

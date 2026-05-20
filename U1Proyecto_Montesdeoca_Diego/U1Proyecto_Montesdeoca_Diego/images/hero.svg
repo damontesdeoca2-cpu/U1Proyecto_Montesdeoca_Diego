@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="520" rx="40" fill="#0a1224"/>
+  <path d="M430 110H660V310H430z" fill="#111827" stroke="#f97316" stroke-width="10"/>
+  <path d="M455 135h190v140h-190z" fill="#111827" stroke="#fbbf24" stroke-width="8"/>
+  <path d="M475 165h150M475 205h150M475 245h150" stroke="#fbbf24" stroke-width="12" stroke-linecap="round"/>
+  <rect x="70" y="160" width="320" height="220" rx="30" fill="#111827" stroke="#f97316" stroke-width="10"/>
+  <circle cx="180" cy="270" r="34" fill="#f97316"/>
+  <circle cx="240" cy="270" r="34" fill="#f97316"/>
+  <circle cx="300" cy="270" r="34" fill="#f97316"/>
+  <path d="M95 215l80-60 50 35-80 60z" fill="#fbbf24" opacity="0.9"/>
+  <path d="M130 400h200" stroke="#f97316" stroke-width="16" stroke-linecap="round"/>
+  <text x="160" y="460" font-size="40" font-family="Arial,Helvetica,sans-serif" fill="#fbbf24" font-weight="700">ChullaCine</text>
+</svg>
