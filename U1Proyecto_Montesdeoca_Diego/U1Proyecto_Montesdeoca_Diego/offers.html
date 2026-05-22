@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ofertas — ChullaCine</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="images/gafas-3d.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">ChullaCine</a>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="services.html">Cartelera</a></li>
+          <li><a href="showtime.html">Funciones</a></li>
+          <li><a href="offers.html" class="active">Ofertas</a></li>
+          <li><a href="about.html">Acerca</a></li>
+          <li><a href="contact.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <form action="index.html" method="get">
+        <div class="header-actions">
+          <label for="search"><button class="button small" type="submit">Enviar</button></label>
+          <input class="search" type="search" placeholder="Ingrese que quiere buscar..." id="buscar" name="buscar">
+          <a class="button small" href="sesion.html">Iniciar sesión</a>
+        </div>
+      </form>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Ofertas especiales</h1>
+    <div class="cards-grid">
+      <div class="card">
+        <h3>2x1 los martes</h3>
+        <p class="muted">Segunda entrada 50% off todos los martes</p>
+        <br>
+        <img src="https://pbs.twimg.com/tweet_video_thumb/EC_5q1NU4AIFPJb.jpg" alt="" width="300px">
+        <br>
+        <br>
+        <div style="margin-bottom: 15px;">
+          <label style="font-size: 13px; display: block; margin-bottom: 5px;">🔥 Ofertas reclamadas: <b>75%</b></label>
+          <progress title="75% reclamado" value="75" max="100" style="width: 100%; height: 10px; accent-color: #ff4757;"></progress>
+          <small class="muted" style="font-size: 11px; display: block; margin-top: 2px;">¡Quedan pocas entradas con este descuento!</small>
+        </div>
+        <center><a class="button small" href="#">Ver más</a></center>
+      </div>
+      
+      <div class="card">
+        <h3>Combo familiar</h3>
+        <p class="muted">Palomitas + 4 bebidas con descuento</p>
+        <br>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_Dy5kIAD5BCuOlvBwX4I44iddCAKqLXkmXQ&s" alt=""
+          width="300px" height="300px;">
+        <br>
+        <br>
+        <div style="margin-bottom: 15px;">
+          <label style="font-size: 13px; display: block; margin-bottom: 5px;">🍿 Presupuesto de comida gastado:</label>
+          <progress title="45% de presupuesto gastado" value="45" max="100" style="width: 100%; height: 10px; accent-color: #2ed573;"></progress>
+          <small class="muted" style="font-size: 11px; display: block; margin-top: 2px;">Has gastado el 45% de tu combo</small>
+        </div>
+        <center><a class="button small" href="#">Ver más</a></center>
+      </div>
+      
+      <div class="card">
+        <h3>Noche de estudiantes</h3>
+        <p class="muted">40% off con credencial, miércoles</p>
+        <br>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRyAGVW9dkovUTQNa9eoVnRZDnbwnUMN5gkQ&s" alt=""
+          width="300px" height="300px;">
+        <br>
+        <br>
+        <div style="margin-bottom: 15px;">
+          <label style="font-size: 13px; display: block; margin-bottom: 5px;">⏳ Tiempo restante de la oferta:</label>
+          <progress title="20% de tiempo restante" value="20" max="100" style="width: 100%; height: 10px; accent-color: #ffa500;"></progress>
+          <small class="muted" style="font-size: 11px; display: block; margin-top: 2px;">¡Termina pronto esta semana!</small>
+        </div>
+        <center><a class="button small" href="#">Ver más</a></center>
+      </div>
+    </div>
+
+    <div class="card" style="margin: 30px 0; overflow-x: auto;">
+      <h3 style="margin-bottom: 16px;">Resumen y Estado de Avance</h3>
+      <table style="width: 100%; border-collapse: collapse; text-align: left;">
+        <thead>
+          <tr style="border-bottom: 2px solid rgba(0,0,0,0.1);">
+            <th style="padding: 10px 8px;">Oferta Especial</th>
+            <th style="padding: 10px 8px;">Estado de Avance</th>
+            <th style="padding: 10px 8px; width: 40%;">Progreso</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom: 1px solid rgba(0,0,0,0.05);">
+            <td style="padding: 12px 8px; font-weight: bold;">2x1 los martes</td>
+            <td style="padding: 12px 8px;" class="muted">75% Reclamado</td>
+            <td style="padding: 12px 8px;">
+              <progress title="75% reclamado" value="75" max="100" style="width: 100%; height: 8px; accent-color: #ff4757;"></progress>
+            </td>
+          </tr>
+          <tr style="border-bottom: 1px solid rgba(0,0,0,0.05);">
+            <td style="padding: 12px 8px; font-weight: bold;">Combo familiar</td>
+            <td style="padding: 12px 8px;" class="muted">45% Consumido</td>
+            <td style="padding: 12px 8px;">
+              <progress title="45% de presupuesto gastado" value="45" max="100" style="width: 100%; height: 8px; accent-color: #2ed573;"></progress>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 12px 8px; font-weight: bold;">Noche de estudiantes</td>
+            <td style="padding: 12px 8px;" class="muted">20% Tiempo restante</td>
+            <td style="padding: 12px 8px;">
+              <progress title="20% de tiempo restante" value="20" max="100" style="width: 100%; height: 8px; accent-color: #ffa500;"></progress>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <iframe src="https://www.google.com/maps/place/Santo+Domingo+de+los+Ts%C3%A1chilas/@-0.3409951,-79.4770053,10z/data=!3m1!4b1!4m6!3m5!1s0x91d548f5313d0c21:0x9299edec397be292!8m2!3d-0.2521882!4d-79.1879383!16s%2Fm%2F03ccmf3?entry=ttu&g_ep=EgoyMDI2MDUxNy4wIKXMDSoASAFQAw%3D%3D" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style="color: white; background-color: white; float: left;"></iframe>
+        <p class="muted" style="margin-top: 16px;">📍 Av. Cinematográfica 123</p>
+  </main>
+
+  <footer>
+    <div class="container">© 2026 ChullaCine — Proyecto de práctica</div>
+    <aside>
+      <br>
+      <a id="redes" href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"
+        style="display: inline-block; margin-right: 15px;">
+        <i class="fab fa-facebook-f" style="color: white; font-size: 24px;"></i>
+      </a>
+      <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer"
+        style="display: inline-block; margin-right: 15px;">
+        <i class="fab fa-twitter" style="color: white; font-size: 24px;"></i>
+      </a>
+      <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" style="display: inline-block;">
+        <i class="fab fa-instagram" style="color: white; font-size: 24px;"></i>
+      </a>
+    </aside>
+  </footer>
+</body>
+
+</html>

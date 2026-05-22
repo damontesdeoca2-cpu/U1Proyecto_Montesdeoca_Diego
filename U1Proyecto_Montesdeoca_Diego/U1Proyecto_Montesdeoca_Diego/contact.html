@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto — ChullaCine</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="images/gafas-3d.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">ChullaCine</a>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="services.html">Cartelera</a></li>
+          <li><a href="showtime.html">Funciones</a></li>
+          <li><a href="offers.html">Ofertas</a></li>
+          <li><a href="about.html">Acerca</a></li>
+          <li><a href="contact.html" class="active">Contacto</a></li>
+        </ul>
+      </nav>
+      <form action="index.html" method="get">
+        <div class="header-actions">
+          <label for="search"><button class="button small" type="submit">Enviar</button></label>
+          <input class="search" type="search" placeholder="Ingrese que quiere buscar..." id="buscar" name="buscar">
+          <a class="button small" href="sesion.html">Iniciar sesión</a>
+        </div>
+      </form>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Contacto</h1>
+    <p class="muted">Escríbenos, te responderemos pronto.</p>
+
+    <div style="display: grid; grid-template-columns: 1fr 300px; gap: 30px; margin: 30px 0;">
+      <form method="get" action="contact.html" class="card">
+        <label>Nombre</label>
+        <input type="text" name="nombre" placeholder="Tu nombre" required>
+
+        <label>Correo</label>
+        <input type="email" name="email" placeholder="correo@ejemplo.com" required>
+
+        <label>Película de interés</label>
+        <input type="text" name="pelicula" placeholder="¿Qué quieres ver?">
+
+        <label>Mensaje</label>
+        <textarea rows="4" name="mensaje" placeholder="Déjanos tu mensaje" required></textarea>
+
+        <button class="button" type="submit" style="margin-top: 16px;">Enviar consulta</button>
+      </form>
+
+      <div class="card">
+        <h3>Horarios</h3>
+        <table style="width:100%; border-collapse: collapse;">
+          <tr>
+            <td style="padding: 6px 0;">Neon Genesis</td>
+            <td class="muted">16:00 • 19:30 • 22:00</td>
+          </tr>
+          <tr>
+            <td style="padding: 6px 0;">Love & Lights</td>
+            <td class="muted">14:45 • 18:00</td>
+          </tr>
+          <tr>
+            <td style="padding: 6px 0;">Family Tales</td>
+            <td class="muted">11:00 • 13:30</td>
+          </tr>
+        </table>
+        <iframe src="https://www.google.com/maps/place/Santo+Domingo+de+los+Ts%C3%A1chilas/@-0.3409951,-79.4770053,10z/data=!3m1!4b1!4m6!3m5!1s0x91d548f5313d0c21:0x9299edec397be292!8m2!3d-0.2521882!4d-79.1879383!16s%2Fm%2F03ccmf3?entry=ttu&g_ep=EgoyMDI2MDUxNy4wIKXMDSoASAFQAw%3D%3D" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p class="muted" style="margin-top: 16px;">📍 Av. Cinematográfica 123</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">© 2026 ChullaCine — Proyecto de práctica</div>
+    <aside>
+      <br>
+      <a id="redes" href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"
+        style="display: inline-block; margin-right: 15px;">
+        <i class="fab fa-facebook-f" style="color: white; font-size: 24px;"></i>
+      </a>
+      <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer"
+        style="display: inline-block; margin-right: 15px;">
+        <i class="fab fa-twitter" style="color: white; font-size: 24px;"></i>
+      </a>
+      <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" style="display: inline-block;">
+        <i class="fab fa-instagram" style="color: white; font-size: 24px;"></i>
+      </a>
+    </aside>
+  </footer>
+</body>
+
+</html>
